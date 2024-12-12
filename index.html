@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #map {
+            height: 400px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        .weather-info {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App with Map</h1>
+    <input id="cityInput" type="text" placeholder="Enter city name">
+    <button id="getWeatherBtn">Get Weather</button>
+    <div class="weather-info">
+        <p id="city">City: </p>
+        <p id="temperature">Temperature: </p>
+        <p id="description">Weather: </p>
+        <p id="humidity">Humidity: </p>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
